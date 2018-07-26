@@ -1,0 +1,50 @@
+{
+	"name": "vscode-ini",
+	"displayName": "Ini",
+	"description": "Providing code complete for Visual Parity test template.",
+	"version": "0.0.9",
+	"publisher": "mckennaville",
+	"scripts": {
+		"package": "vsce package"
+	},
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"icon": "images/icon.png",
+	"license": "WTFPL",
+	"keywords": [
+		"ini",
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yhvicey/vscode-bond"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "ini",
+				"aliases": [
+					"Ini",
+					"ini"
+				],
+				"extensions": [
+					".ini"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "ini",
+				"scopeName": "source.ini",
+				"path": "./syntaxes/ini.tmLanguage.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"vsce": "^1.36.3"
+	}
+}
